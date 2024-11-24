@@ -1,0 +1,18 @@
+import java.util.*;
+public class ReversNumber{
+
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter any number for sumof  Digit:");
+int no=sc.nextInt();
+int sum=1, rem=0;
+while(no!=0)
+{
+rem=no%10;//1234=4 
+sum=sum+rem*10;
+no=no/10;
+}
+System.out.printf("Revers no is: %d",sum);
+}
+}
